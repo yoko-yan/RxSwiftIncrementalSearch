@@ -1,0 +1,55 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="15705" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="5PP-9R-0II">
+    <device id="retina6_1" orientation="portrait" appearance="light"/>
+    <dependencies>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="15706"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <scenes>
+        <!--Third View Controller-->
+        <scene sceneID="NTE-Sf-D1A">
+            <objects>
+                <viewController id="5PP-9R-0II" customClass="ThirdViewController" customModule="RxSwiftIncrementalSearch" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="AUT-bj-Ibp">
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <textView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" textAlignment="natural" translatesAutoresizingMaskIntoConstraints="NO" id="N1e-T8-DvO">
+                                <rect key="frame" x="20" y="95" width="374" height="747"/>
+                                <color key="backgroundColor" systemColor="systemBackgroundColor" cocoaTouchSystemColor="whiteColor"/>
+                                <string key="text">Lorem ipsum dolor sit er elit lamet, consectetaur cillium adipisicing pecu, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum. Nam liber te conscient to factor tum poen legum odioque civiuda.</string>
+                                <color key="textColor" systemColor="labelColor" cocoaTouchSystemColor="darkTextColor"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                <textInputTraits key="textInputTraits" autocapitalizationType="sentences"/>
+                            </textView>
+                            <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="LHE-iz-VOX">
+                                <rect key="frame" x="20" y="64" width="374" height="21"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <textInputTraits key="textInputTraits"/>
+                            </textField>
+                        </subviews>
+                        <color key="backgroundColor" systemColor="systemBackgroundColor" cocoaTouchSystemColor="whiteColor"/>
+                        <constraints>
+                            <constraint firstItem="LHE-iz-VOX" firstAttribute="leading" secondItem="Kup-sV-zH9" secondAttribute="leading" constant="20" id="K7q-in-TkB"/>
+                            <constraint firstItem="N1e-T8-DvO" firstAttribute="leading" secondItem="Kup-sV-zH9" secondAttribute="leading" constant="20" id="UBc-85-S6Y"/>
+                            <constraint firstItem="Kup-sV-zH9" firstAttribute="trailing" secondItem="N1e-T8-DvO" secondAttribute="trailing" constant="20" id="dbT-Wa-EWg"/>
+                            <constraint firstItem="Kup-sV-zH9" firstAttribute="bottom" secondItem="N1e-T8-DvO" secondAttribute="bottom" constant="20" id="end-fe-IfX"/>
+                            <constraint firstItem="Kup-sV-zH9" firstAttribute="trailing" secondItem="LHE-iz-VOX" secondAttribute="trailing" constant="20" id="fyc-2R-xtT"/>
+                            <constraint firstItem="LHE-iz-VOX" firstAttribute="top" secondItem="Kup-sV-zH9" secondAttribute="top" constant="20" id="mu3-Zw-BFO"/>
+                            <constraint firstItem="N1e-T8-DvO" firstAttribute="top" secondItem="LHE-iz-VOX" secondAttribute="bottom" constant="10" id="to4-tV-fE7"/>
+                        </constraints>
+                        <viewLayoutGuide key="safeArea" id="Kup-sV-zH9"/>
+                    </view>
+                    <navigationItem key="navigationItem" id="idG-YY-nUN"/>
+                    <connections>
+                        <outlet property="bodyTextView" destination="N1e-T8-DvO" id="5c5-Xd-6M2"/>
+                        <outlet property="titleTextField" destination="LHE-iz-VOX" id="KfI-WZ-SGN"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="uU7-us-8SG" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="-320" y="-166"/>
+        </scene>
+    </scenes>
+</document>

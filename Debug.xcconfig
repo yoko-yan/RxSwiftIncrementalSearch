@@ -1,0 +1,2 @@
+#include "Pods/Target Support Files/Pods-RxSwiftIncrementalSearch/Pods-RxSwiftIncrementalSearch.debug.xcconfig"
+#include "Base.xcconfig"
