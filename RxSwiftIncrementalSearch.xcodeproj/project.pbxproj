@@ -87,7 +87,6 @@
 		CDD2FE3F248B70CC00387E5A /* FifthViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = CDD2FE3E248B70CC00387E5A /* FifthViewController.swift */; };
 		CDD2FE41248B716E00387E5A /* FifthView.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = CDD2FE40248B716E00387E5A /* FifthView.storyboard */; };
 		CDE9070B24D9D01A00D21ED1 /* Base.xcconfig in Resources */ = {isa = PBXBuildFile; fileRef = CDE9070A24D9D01A00D21ED1 /* Base.xcconfig */; };
-		CDE9070E24D9D39800D21ED1 /* Local.xcconfig in Resources */ = {isa = PBXBuildFile; fileRef = CDE9070D24D9D1F600D21ED1 /* Local.xcconfig */; };
 		CDE9070F24D9D39F00D21ED1 /* Debug.xcconfig in Resources */ = {isa = PBXBuildFile; fileRef = CD83B22024D9C3EE008BF0F7 /* Debug.xcconfig */; };
 		CDF82D55248FD47100543CD9 /* Log.swift in Sources */ = {isa = PBXBuildFile; fileRef = CD96390F247425B1009BA317 /* Log.swift */; };
 		CDF82D592494065800543CD9 /* TestSessionAdapter.swift in Sources */ = {isa = PBXBuildFile; fileRef = CDF82D582494065800543CD9 /* TestSessionAdapter.swift */; };
@@ -276,7 +275,6 @@
 		CDD2FE3E248B70CC00387E5A /* FifthViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FifthViewController.swift; sourceTree = "<group>"; };
 		CDD2FE40248B716E00387E5A /* FifthView.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = FifthView.storyboard; sourceTree = "<group>"; };
 		CDE9070A24D9D01A00D21ED1 /* Base.xcconfig */ = {isa = PBXFileReference; lastKnownFileType = text.xcconfig; path = Base.xcconfig; sourceTree = "<group>"; };
-		CDE9070D24D9D1F600D21ED1 /* Local.xcconfig */ = {isa = PBXFileReference; lastKnownFileType = text.xcconfig; path = Local.xcconfig; sourceTree = "<group>"; };
 		CDF82D582494065800543CD9 /* TestSessionAdapter.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TestSessionAdapter.swift; sourceTree = "<group>"; };
 		F3EB9CBD5CC096ECBF23F9AC /* Pods-RxSwiftIncrementalSearch.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-RxSwiftIncrementalSearch.debug.xcconfig"; path = "Target Support Files/Pods-RxSwiftIncrementalSearch/Pods-RxSwiftIncrementalSearch.debug.xcconfig"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
@@ -372,7 +370,6 @@
 		973ABF8723E4774000591A66 = {
 			isa = PBXGroup;
 			children = (
-				CDE9070D24D9D1F600D21ED1 /* Local.xcconfig */,
 				CDE9070A24D9D01A00D21ED1 /* Base.xcconfig */,
 				CD83B22024D9C3EE008BF0F7 /* Debug.xcconfig */,
 				CD83B22224D9C40C008BF0F7 /* Release.xcconfig */,
@@ -882,7 +879,6 @@
 			buildActionMask = 2147483647;
 			files = (
 				973ABFA223E4774100591A66 /* LaunchScreen.storyboard in Resources */,
-				CDE9070E24D9D39800D21ED1 /* Local.xcconfig in Resources */,
 				CDE9070B24D9D01A00D21ED1 /* Base.xcconfig in Resources */,
 				CD2B762F24746AD6005B31A1 /* ThirdView.storyboard in Resources */,
 				973ABF9F23E4774100591A66 /* Assets.xcassets in Resources */,
