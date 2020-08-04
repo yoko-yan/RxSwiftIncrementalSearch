@@ -1,0 +1,12 @@
+xcassets:  
+  inputs: RxSwiftIncrementalSearch/Assets.xcassets  
+  outputs:  
+    output:  RxSwiftIncrementalSearch/Generated/Assets.swift  
+    templateName: swift4
+ib:
+  inputs: RxSwiftIncrementalSearch/Views/Storyboards
+  outputs:
+    - templateName: scenes-swift4
+      output: RxSwiftIncrementalSearch/Generated/Scenes.swift
+    - templateName: segues-swift4
+      output: RxSwiftIncrementalSearch/Generated/Segues.swift

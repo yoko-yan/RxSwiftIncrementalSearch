@@ -1,0 +1,15 @@
+disabled_rules:
+
+
+opt_in_rules:
+
+
+excluded:
+- Pods/
+- Carthage/
+
+
+line_length: 300
+
+identifier_name:
+  min_length: 2

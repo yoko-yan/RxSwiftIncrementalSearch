@@ -1,0 +1,39 @@
+{
+  "batchcomplete": "",
+  "query": {
+    "searchinfo": {
+      "totalhits": 1222,
+      "suggestion": "sweet",
+      "suggestionsnippet": "<em>sweet</em>"
+    },
+    "search": [
+      {
+        "ns": 0,
+        "title": "スイフト(テスト)",
+        "pageid": 499755,
+        "size": 4190,
+        "wordcount": 383,
+        "snippet": "スイフト、スウィフト（英語 <span class=\"searchmatch\">swift</span>, <span class=\"searchmatch\">SWIFT</span>）の原義は、「迅速」。転じて英語圏の姓など。 グレアム・スウィフト - イギリスの作家。 ジョナサン・スウィフト - アイルランドの作家。『ガリヴァー旅行記』の作者として著名。 ジョン・トランブル・スウィフト - アメリカの教育者。明治時代の日本で活動。",
+        "timestamp": "2020-01-18T06:47:30Z"
+      },
+      {
+        "ns": 0,
+        "title": "通貨",
+        "pageid": 4126,
+        "size": 33334,
+        "wordcount": 3469,
+        "snippet": "『デフレと円高の何が「悪」か』 光文社〈光文社新書〉、2010年、188頁。 ^ http://www.<span class=\"searchmatch\">swift</span>.com/about_<span class=\"searchmatch\">swift</span>/shownews?param_dcr=news.data/en/<span class=\"searchmatch\">swift</span>_com/2014/PR_RMB_Nov_Dec.xml RMB breaks into the",
+        "timestamp": "2020-02-27T12:30:37Z"
+      },
+      {
+        "ns": 0,
+        "title": "ISO 9362",
+        "pageid": 411328,
+        "size": 3227,
+        "wordcount": 445,
+        "snippet": "ISO 9362は国際標準化機構によって承認された金融機関識別コードの標準書式である。 <span class=\"searchmatch\">SWIFT</span>コード（スウィフトコード）、<span class=\"searchmatch\">SWIFT</span>アドレスないしはBICコードとして知られ、銀行間の決済、特に国際決済に使用されている。 コードは8文字か11文字で構成されている。 4文字 - 金融機関コード 2文字",
+        "timestamp": "2017-07-04T01:06:58Z"
+      }
+    ]
+  }
+}
