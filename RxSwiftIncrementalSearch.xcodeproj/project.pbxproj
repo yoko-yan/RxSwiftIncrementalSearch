@@ -66,7 +66,6 @@
 		CD81A45F24801DDE005E75DB /* page.json in Resources */ = {isa = PBXBuildFile; fileRef = CD81A45E24801DDE005E75DB /* page.json */; };
 		CD81A46124817730005E75DB /* DependenciesTest.swift in Sources */ = {isa = PBXBuildFile; fileRef = CD81A46024817730005E75DB /* DependenciesTest.swift */; };
 		CD81A466248186ED005E75DB /* Helpers.swift in Sources */ = {isa = PBXBuildFile; fileRef = CD81A465248186ED005E75DB /* Helpers.swift */; };
-		CD83B22324D9C40C008BF0F7 /* Release.xcconfig in Resources */ = {isa = PBXBuildFile; fileRef = CD83B22224D9C40C008BF0F7 /* Release.xcconfig */; };
 		CD9638CE247328F4009BA317 /* WikipediaAPI.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = CD9638C5247328F3009BA317 /* WikipediaAPI.framework */; };
 		CD9638D5247328F4009BA317 /* WikipediaAPITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = CD9638D4247328F4009BA317 /* WikipediaAPITests.swift */; };
 		CD9638D7247328F4009BA317 /* WikipediaAPI.h in Headers */ = {isa = PBXBuildFile; fileRef = CD9638C7247328F3009BA317 /* WikipediaAPI.h */; settings = {ATTRIBUTES = (Public, ); }; };
@@ -86,8 +85,6 @@
 		CD96391324742B1D009BA317 /* FirstTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = CD96391224742B1D009BA317 /* FirstTableViewCell.swift */; };
 		CDD2FE3F248B70CC00387E5A /* FifthViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = CDD2FE3E248B70CC00387E5A /* FifthViewController.swift */; };
 		CDD2FE41248B716E00387E5A /* FifthView.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = CDD2FE40248B716E00387E5A /* FifthView.storyboard */; };
-		CDE9070B24D9D01A00D21ED1 /* Base.xcconfig in Resources */ = {isa = PBXBuildFile; fileRef = CDE9070A24D9D01A00D21ED1 /* Base.xcconfig */; };
-		CDE9070F24D9D39F00D21ED1 /* Debug.xcconfig in Resources */ = {isa = PBXBuildFile; fileRef = CD83B22024D9C3EE008BF0F7 /* Debug.xcconfig */; };
 		CDF82D55248FD47100543CD9 /* Log.swift in Sources */ = {isa = PBXBuildFile; fileRef = CD96390F247425B1009BA317 /* Log.swift */; };
 		CDF82D592494065800543CD9 /* TestSessionAdapter.swift in Sources */ = {isa = PBXBuildFile; fileRef = CDF82D582494065800543CD9 /* TestSessionAdapter.swift */; };
 /* End PBXBuildFile section */
@@ -818,7 +815,7 @@
 			isa = PBXProject;
 			attributes = {
 				LastSwiftUpdateCheck = 1130;
-				LastUpgradeCheck = 1130;
+				LastUpgradeCheck = 1160;
 				ORGANIZATIONNAME = takayuki.yokoda;
 				TargetAttributes = {
 					973ABF8F23E4774000591A66 = {
@@ -879,13 +876,10 @@
 			buildActionMask = 2147483647;
 			files = (
 				973ABFA223E4774100591A66 /* LaunchScreen.storyboard in Resources */,
-				CDE9070B24D9D01A00D21ED1 /* Base.xcconfig in Resources */,
 				CD2B762F24746AD6005B31A1 /* ThirdView.storyboard in Resources */,
 				973ABF9F23E4774100591A66 /* Assets.xcassets in Resources */,
 				CDD2FE41248B716E00387E5A /* FifthView.storyboard in Resources */,
-				CD83B22324D9C40C008BF0F7 /* Release.xcconfig in Resources */,
 				973ABF9D23E4774000591A66 /* Main.storyboard in Resources */,
-				CDE9070F24D9D39F00D21ED1 /* Debug.xcconfig in Resources */,
 				CD244D90248A9ABE00A1D67C /* FourthView.storyboard in Resources */,
 				CD40561324D205DE000FFE1A /* carthage-input.xcfilelist in Resources */,
 				CD40561424D205DE000FFE1A /* carthage-output.xcfilelist in Resources */,
