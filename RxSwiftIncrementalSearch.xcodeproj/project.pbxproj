@@ -1021,7 +1021,7 @@
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 			shellPath = /bin/sh;
-			shellScript = "if which mint >/dev/null; then\n  mint run carthage copy-frameworks\nelse\n  echo \"warning: Mint not installed, download from https://github.com/yonaskolb/Mint\"\n  if which carthage >/dev/null; then\n    /usr/local/bin/carthage copy-frameworks\n  else\n    echo \"warning: Carthage not installed, download it from https://github.com/Carthage/Carthage\"\n  fi\nfi\n";
+			shellScript = "unset SDKROOT\nif which mint >/dev/null; then\n  mint run carthage copy-frameworks\nelse\n  echo \"warning: Mint not installed, download from https://github.com/yonaskolb/Mint\"\nfi\n";
 		};
 		CD2B76282474523F005B31A1 /* Swiftgen */ = {
 			isa = PBXShellScriptBuildPhase;
@@ -1039,7 +1039,7 @@
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 			shellPath = /bin/sh;
-			shellScript = "if which mint >/dev/null; then\n  mint run swiftgen\nelse\n  echo \"warning: Mint not installed, download from https://github.com/yonaskolb/Mint\"\n  if which swiftgen >/dev/null; then\n    swiftgen\n  else\n    echo \"warning: SwiftGen not installed, download it from https://github.com/SwiftGen/SwiftGen\"\n  fi\nfi\n";
+			shellScript = "unset SDKROOT\nif which mint >/dev/null; then\n  mint run swiftgen\nelse\n  echo \"warning: Mint not installed, download from https://github.com/yonaskolb/Mint\"\nfi\n";
 		};
 		CD3064AE247A822300EBBD1B /* Swiftlint */ = {
 			isa = PBXShellScriptBuildPhase;
@@ -1057,7 +1057,7 @@
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 			shellPath = /bin/sh;
-			shellScript = "if which mint >/dev/null; then\n  #mint run swiftlint swiftlint autocorrect --format\n  mint run swiftlint\nelse\n  echo \"warning: Mint not installed, download from https://github.com/yonaskolb/Mint\"\n  if which swiftlint >/dev/null; then\n    swiftlint\n  else\n    echo \"warning: SwiftLint not installed, download from https://github.com/realm/SwiftLint\"\n  fi\nfi\n";
+			shellScript = "unset SDKROOT\nif which mint >/dev/null; then\n  #mint run swiftlint swiftlint autocorrect --format\n  mint run swiftlint\nelse\n  echo \"warning: Mint not installed, download from https://github.com/yonaskolb/Mint\"\nfi\n";
 		};
 		CD6824EA2481A81A003E59B8 /* Carthage */ = {
 			isa = PBXShellScriptBuildPhase;
