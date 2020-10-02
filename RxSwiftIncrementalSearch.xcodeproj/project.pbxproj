@@ -402,7 +402,7 @@
 			children = (
 				CD2B762924745288005B31A1 /* Generated */,
 				CD96389824731F78009BA317 /* Library */,
-				CD96389524731CDE009BA317 /* ViewModel */,
+				CD96389524731CDE009BA317 /* ViewModels */,
 				CD96389424731CD1009BA317 /* Views */,
 				973ABF9323E4774000591A66 /* AppDelegate.swift */,
 				973ABF9523E4774000591A66 /* SceneDelegate.swift */,
@@ -524,7 +524,7 @@
 			path = Views;
 			sourceTree = "<group>";
 		};
-		CD96389524731CDE009BA317 /* ViewModel */ = {
+		CD96389524731CDE009BA317 /* ViewModels */ = {
 			isa = PBXGroup;
 			children = (
 				97029B5223EDDB600088640A /* Dependencies.swift */,
@@ -534,7 +534,7 @@
 				CD2B76362475863A005B31A1 /* ThirdViewModel.swift */,
 				CD244D8B248A934500A1D67C /* FourthViewModel.swift */,
 			);
-			path = ViewModel;
+			path = ViewModels;
 			sourceTree = "<group>";
 		};
 		CD96389624731ED0009BA317 /* Storyboards */ = {
