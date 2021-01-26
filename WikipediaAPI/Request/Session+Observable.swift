@@ -12,7 +12,7 @@ extension Reactive where Base: Session {
                 case .success(let response):
                     singleEvent(.success(response))
                 case .failure(let error):
-                    singleEvent(.error(error))
+                    singleEvent(.failure(error))
                 }
             }
 

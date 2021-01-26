@@ -1,4 +1,4 @@
-github "ReactiveX/RxSwift" "5.1.1"
-github "RxSwiftCommunity/RxSwiftExt" "5.2.0"
+github "ReactiveX/RxSwift" "6.0.0"
+github "RxSwiftCommunity/RxSwiftExt" "6.0.0"
 github "SVProgressHUD/SVProgressHUD" "2.2.5"
 github "ishkawa/APIKit" "5.1.0"
