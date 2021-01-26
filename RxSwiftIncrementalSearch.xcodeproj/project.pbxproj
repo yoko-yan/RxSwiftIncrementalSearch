@@ -3,21 +3,16 @@
 	archiveVersion = 1;
 	classes = {
 	};
-	objectVersion = 51;
+	objectVersion = 52;
 	objects = {
 
 /* Begin PBXBuildFile section */
 		0F2BA4362782886A09BA7FBD /* Pods_WikipediaAPI.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 7806273B87B2FE46EB06AE72 /* Pods_WikipediaAPI.framework */; };
 		97029B4723EDD3890088640A /* FirstViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 97029B4623EDD3890088640A /* FirstViewModel.swift */; };
-		97029B4A23EDD82D0088640A /* RxSwift.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 97029B4923EDD82D0088640A /* RxSwift.framework */; };
-		97029B4E23EDD8530088640A /* RxCocoa.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 97029B4D23EDD8530088640A /* RxCocoa.framework */; };
 		97029B5123EDDA920088640A /* ViewModelType.swift in Sources */ = {isa = PBXBuildFile; fileRef = 97029B5023EDDA920088640A /* ViewModelType.swift */; };
 		97029B5323EDDB600088640A /* Dependencies.swift in Sources */ = {isa = PBXBuildFile; fileRef = 97029B5223EDDB600088640A /* Dependencies.swift */; };
 		97029B6523EDEF120088640A /* materialized+elements.swift in Sources */ = {isa = PBXBuildFile; fileRef = 97029B6423EDEF120088640A /* materialized+elements.swift */; };
 		97029B6723EDF0600088640A /* LoadingIndicator.swift in Sources */ = {isa = PBXBuildFile; fileRef = 97029B6623EDF0600088640A /* LoadingIndicator.swift */; };
-		97029B6923EDF4790088640A /* APIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 97029B6823EDF4790088640A /* APIKit.framework */; };
-		97029B6C23EDF51B0088640A /* RxRelay.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 97029B6B23EDF51B0088640A /* RxRelay.framework */; };
-		97029B6F23EDF57D0088640A /* SVProgressHUD.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 97029B6E23EDF57D0088640A /* SVProgressHUD.framework */; };
 		97029B7223EDFA4F0088640A /* RootViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 97029B7123EDFA4F0088640A /* RootViewController.swift */; };
 		97029B7423EE915B0088640A /* SecondViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 97029B7323EE915B0088640A /* SecondViewModel.swift */; };
 		973ABF9423E4774000591A66 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 973ABF9323E4774000591A66 /* AppDelegate.swift */; };
@@ -52,20 +47,26 @@
 		CD40561324D205DE000FFE1A /* carthage-input.xcfilelist in Resources */ = {isa = PBXBuildFile; fileRef = CD40561124D205DD000FFE1A /* carthage-input.xcfilelist */; };
 		CD40561424D205DE000FFE1A /* carthage-output.xcfilelist in Resources */ = {isa = PBXBuildFile; fileRef = CD40561224D205DE000FFE1A /* carthage-output.xcfilelist */; };
 		CD5AB4492482ECA800A124E5 /* TestSessionTask.swift in Sources */ = {isa = PBXBuildFile; fileRef = CD5AB4482482ECA800A124E5 /* TestSessionTask.swift */; };
-		CD6824E22481A51E003E59B8 /* RxBlocking.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = CD6824DF2481A2E1003E59B8 /* RxBlocking.framework */; };
-		CD6824E92481A7B0003E59B8 /* RxTest.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = CD6824E82481A7B0003E59B8 /* RxTest.framework */; };
 		CD7B4F3A248438900056F631 /* search1.json in Resources */ = {isa = PBXBuildFile; fileRef = CD7B4F39248438900056F631 /* search1.json */; };
 		CD7B4F3C248438AA0056F631 /* page.json in Resources */ = {isa = PBXBuildFile; fileRef = CD7B4F3B248438AA0056F631 /* page.json */; };
 		CD7B4F3F24881A570056F631 /* search2.json in Resources */ = {isa = PBXBuildFile; fileRef = CD7B4F3E24881A570056F631 /* search2.json */; };
-		CD81A451247B4A0C005E75DB /* RxSwiftExt.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = CD81A450247B4A0C005E75DB /* RxSwiftExt.framework */; };
 		CD81A454247EDE61005E75DB /* TestSessionAdapter.swift in Sources */ = {isa = PBXBuildFile; fileRef = CD81A453247EDE61005E75DB /* TestSessionAdapter.swift */; };
 		CD81A457247EDFC7005E75DB /* WikipediSearchRequestTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = CD81A456247EDFC7005E75DB /* WikipediSearchRequestTests.swift */; };
-		CD81A458247EE4A6005E75DB /* APIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 97029B6823EDF4790088640A /* APIKit.framework */; };
 		CD81A45B247F4E10005E75DB /* search.json in Resources */ = {isa = PBXBuildFile; fileRef = CD81A45A247F4E10005E75DB /* search.json */; };
 		CD81A45D24801C7E005E75DB /* WikipediaPageRequestTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = CD81A45C24801C7E005E75DB /* WikipediaPageRequestTests.swift */; };
 		CD81A45F24801DDE005E75DB /* page.json in Resources */ = {isa = PBXBuildFile; fileRef = CD81A45E24801DDE005E75DB /* page.json */; };
 		CD81A46124817730005E75DB /* DependenciesTest.swift in Sources */ = {isa = PBXBuildFile; fileRef = CD81A46024817730005E75DB /* DependenciesTest.swift */; };
 		CD81A466248186ED005E75DB /* Helpers.swift in Sources */ = {isa = PBXBuildFile; fileRef = CD81A465248186ED005E75DB /* Helpers.swift */; };
+		CD86866025C08FD800AD6B80 /* RxSwift.xcframework in Frameworks */ = {isa = PBXBuildFile; fileRef = CD86865F25C08FD800AD6B80 /* RxSwift.xcframework */; };
+		CD86866E25C0902900AD6B80 /* RxCocoa.xcframework in Frameworks */ = {isa = PBXBuildFile; fileRef = CD86866D25C0902900AD6B80 /* RxCocoa.xcframework */; };
+		CD86867C25C0903800AD6B80 /* RxRelay.xcframework in Frameworks */ = {isa = PBXBuildFile; fileRef = CD86867B25C0903800AD6B80 /* RxRelay.xcframework */; };
+		CD86868425C0904A00AD6B80 /* RxSwiftExt.xcframework in Frameworks */ = {isa = PBXBuildFile; fileRef = CD86868325C0904A00AD6B80 /* RxSwiftExt.xcframework */; };
+		CD86869225C0905C00AD6B80 /* SVProgressHUD.xcframework in Frameworks */ = {isa = PBXBuildFile; fileRef = CD86869125C0905C00AD6B80 /* SVProgressHUD.xcframework */; };
+		CD8686F825C0944900AD6B80 /* APIKit.xcframework in Frameworks */ = {isa = PBXBuildFile; fileRef = CD86865725C08FAE00AD6B80 /* APIKit.xcframework */; };
+		CD86870925C094C200AD6B80 /* RxSwift.xcframework in Frameworks */ = {isa = PBXBuildFile; fileRef = CD86865F25C08FD800AD6B80 /* RxSwift.xcframework */; };
+		CD86876025C0972500AD6B80 /* RxTest.xcframework in Frameworks */ = {isa = PBXBuildFile; fileRef = CD86869F25C0919700AD6B80 /* RxTest.xcframework */; };
+		CD86876725C0972800AD6B80 /* RxBlocking.xcframework in Frameworks */ = {isa = PBXBuildFile; fileRef = CD8686C025C091D100AD6B80 /* RxBlocking.xcframework */; };
+		CD86876E25C0976500AD6B80 /* APIKit.xcframework in Frameworks */ = {isa = PBXBuildFile; fileRef = CD86865725C08FAE00AD6B80 /* APIKit.xcframework */; };
 		CD9638CE247328F4009BA317 /* WikipediaAPI.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = CD9638C5247328F3009BA317 /* WikipediaAPI.framework */; };
 		CD9638D5247328F4009BA317 /* WikipediaAPITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = CD9638D4247328F4009BA317 /* WikipediaAPITests.swift */; };
 		CD9638D7247328F4009BA317 /* WikipediaAPI.h in Headers */ = {isa = PBXBuildFile; fileRef = CD9638C7247328F3009BA317 /* WikipediaAPI.h */; settings = {ATTRIBUTES = (Public, ); }; };
@@ -76,7 +77,6 @@
 		CD9638E424732906009BA317 /* Session+Observable.swift in Sources */ = {isa = PBXBuildFile; fileRef = 97029B5423EDE7AC0088640A /* Session+Observable.swift */; };
 		CD9638E524732906009BA317 /* WikipediaSearchResponse.swift in Sources */ = {isa = PBXBuildFile; fileRef = 97029B5C23EDE8E90088640A /* WikipediaSearchResponse.swift */; };
 		CD9638E624732906009BA317 /* WikipediaParser.swift in Sources */ = {isa = PBXBuildFile; fileRef = 97029B5E23EDE93A0088640A /* WikipediaParser.swift */; };
-		CD9638E724732A30009BA317 /* APIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 97029B6823EDF4790088640A /* APIKit.framework */; };
 		CD9638F9247334A8009BA317 /* Library.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = CD9638F0247334A8009BA317 /* Library.framework */; };
 		CD963900247334A8009BA317 /* LibraryTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = CD9638FF247334A8009BA317 /* LibraryTests.swift */; };
 		CD963902247334A8009BA317 /* Library.h in Headers */ = {isa = PBXBuildFile; fileRef = CD9638F2247334A8009BA317 /* Library.h */; settings = {ATTRIBUTES = (Public, ); }; };
@@ -255,6 +255,14 @@
 		CD81A465248186ED005E75DB /* Helpers.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Helpers.swift; sourceTree = "<group>"; };
 		CD83B22024D9C3EE008BF0F7 /* Debug.xcconfig */ = {isa = PBXFileReference; lastKnownFileType = text.xcconfig; path = Debug.xcconfig; sourceTree = "<group>"; };
 		CD83B22224D9C40C008BF0F7 /* Release.xcconfig */ = {isa = PBXFileReference; lastKnownFileType = text.xcconfig; path = Release.xcconfig; sourceTree = "<group>"; };
+		CD86865725C08FAE00AD6B80 /* APIKit.xcframework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.xcframework; name = APIKit.xcframework; path = Carthage/Build/APIKit.xcframework; sourceTree = "<group>"; };
+		CD86865F25C08FD800AD6B80 /* RxSwift.xcframework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.xcframework; name = RxSwift.xcframework; path = Carthage/Build/RxSwift.xcframework; sourceTree = "<group>"; };
+		CD86866D25C0902900AD6B80 /* RxCocoa.xcframework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.xcframework; name = RxCocoa.xcframework; path = Carthage/Build/RxCocoa.xcframework; sourceTree = "<group>"; };
+		CD86867B25C0903800AD6B80 /* RxRelay.xcframework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.xcframework; name = RxRelay.xcframework; path = Carthage/Build/RxRelay.xcframework; sourceTree = "<group>"; };
+		CD86868325C0904A00AD6B80 /* RxSwiftExt.xcframework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.xcframework; name = RxSwiftExt.xcframework; path = Carthage/Build/RxSwiftExt.xcframework; sourceTree = "<group>"; };
+		CD86869125C0905C00AD6B80 /* SVProgressHUD.xcframework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.xcframework; name = SVProgressHUD.xcframework; path = Carthage/Build/SVProgressHUD.xcframework; sourceTree = "<group>"; };
+		CD86869F25C0919700AD6B80 /* RxTest.xcframework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.xcframework; name = RxTest.xcframework; path = Carthage/Build/RxTest.xcframework; sourceTree = "<group>"; };
+		CD8686C025C091D100AD6B80 /* RxBlocking.xcframework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.xcframework; name = RxBlocking.xcframework; path = Carthage/Build/RxBlocking.xcframework; sourceTree = "<group>"; };
 		CD9638C5247328F3009BA317 /* WikipediaAPI.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = WikipediaAPI.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		CD9638C7247328F3009BA317 /* WikipediaAPI.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = WikipediaAPI.h; sourceTree = "<group>"; };
 		CD9638C8247328F3009BA317 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
@@ -281,15 +289,15 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				CD81A451247B4A0C005E75DB /* RxSwiftExt.framework in Frameworks */,
+				CD86876E25C0976500AD6B80 /* APIKit.xcframework in Frameworks */,
+				CD86869225C0905C00AD6B80 /* SVProgressHUD.xcframework in Frameworks */,
+				CD86868425C0904A00AD6B80 /* RxSwiftExt.xcframework in Frameworks */,
+				CD86867C25C0903800AD6B80 /* RxRelay.xcframework in Frameworks */,
+				CD86866E25C0902900AD6B80 /* RxCocoa.xcframework in Frameworks */,
+				CD86866025C08FD800AD6B80 /* RxSwift.xcframework in Frameworks */,
 				CD9638DA247328F4009BA317 /* WikipediaAPI.framework in Frameworks */,
-				97029B6F23EDF57D0088640A /* SVProgressHUD.framework in Frameworks */,
 				CD963905247334A8009BA317 /* Library.framework in Frameworks */,
-				97029B6C23EDF51B0088640A /* RxRelay.framework in Frameworks */,
-				97029B6923EDF4790088640A /* APIKit.framework in Frameworks */,
-				97029B4E23EDD8530088640A /* RxCocoa.framework in Frameworks */,
 				9743A6C923F8799200A335EC /* Pods_RxSwiftIncrementalSearch.framework in Frameworks */,
-				97029B4A23EDD82D0088640A /* RxSwift.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -297,8 +305,8 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				CD6824E92481A7B0003E59B8 /* RxTest.framework in Frameworks */,
-				CD6824E22481A51E003E59B8 /* RxBlocking.framework in Frameworks */,
+				CD86876725C0972800AD6B80 /* RxBlocking.xcframework in Frameworks */,
+				CD86876025C0972500AD6B80 /* RxTest.xcframework in Frameworks */,
 				9A7073C7B24D90CC9473E4C5 /* Pods_RxSwiftIncrementalSearchTests.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -315,7 +323,8 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				CD9638E724732A30009BA317 /* APIKit.framework in Frameworks */,
+				CD86870925C094C200AD6B80 /* RxSwift.xcframework in Frameworks */,
+				CD8686F825C0944900AD6B80 /* APIKit.xcframework in Frameworks */,
 				0F2BA4362782886A09BA7FBD /* Pods_WikipediaAPI.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -324,7 +333,6 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				CD81A458247EE4A6005E75DB /* APIKit.framework in Frameworks */,
 				CD9638CE247328F4009BA317 /* WikipediaAPI.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -627,6 +635,14 @@
 		E718A72F46E50E7A77CB3928 /* Frameworks */ = {
 			isa = PBXGroup;
 			children = (
+				CD8686C025C091D100AD6B80 /* RxBlocking.xcframework */,
+				CD86869F25C0919700AD6B80 /* RxTest.xcframework */,
+				CD86869125C0905C00AD6B80 /* SVProgressHUD.xcframework */,
+				CD86868325C0904A00AD6B80 /* RxSwiftExt.xcframework */,
+				CD86867B25C0903800AD6B80 /* RxRelay.xcframework */,
+				CD86866D25C0902900AD6B80 /* RxCocoa.xcframework */,
+				CD86865F25C08FD800AD6B80 /* RxSwift.xcframework */,
+				CD86865725C08FAE00AD6B80 /* APIKit.xcframework */,
 				CD6824E82481A7B0003E59B8 /* RxTest.framework */,
 				CD6824DF2481A2E1003E59B8 /* RxBlocking.framework */,
 				CD81A450247B4A0C005E75DB /* RxSwiftExt.framework */,
@@ -677,7 +693,6 @@
 				973ABF8C23E4774000591A66 /* Sources */,
 				973ABF8D23E4774000591A66 /* Frameworks */,
 				973ABF8E23E4774000591A66 /* Resources */,
-				97029B4823EDD6530088640A /* Carthage */,
 				97029B4C23EDD82D0088640A /* Embed Frameworks */,
 				CD2B76282474523F005B31A1 /* Swiftgen */,
 				CD3064AE247A822300EBBD1B /* Swiftlint */,
@@ -701,7 +716,6 @@
 				973ABFA423E4774100591A66 /* Sources */,
 				973ABFA523E4774100591A66 /* Frameworks */,
 				973ABFA623E4774100591A66 /* Resources */,
-				CD6824EA2481A81A003E59B8 /* Carthage */,
 			);
 			buildRules = (
 			);
@@ -1003,26 +1017,6 @@
 			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
 			showEnvVarsInLog = 0;
 		};
-		97029B4823EDD6530088640A /* Carthage */ = {
-			isa = PBXShellScriptBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-			);
-			inputFileListPaths = (
-				"$(SRCROOT)/carthage-input.xcfilelist",
-			);
-			inputPaths = (
-			);
-			name = Carthage;
-			outputFileListPaths = (
-				"$(SRCROOT)/carthage-output.xcfilelist",
-			);
-			outputPaths = (
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-			shellPath = /bin/sh;
-			shellScript = "unset SDKROOT\nif which mint >/dev/null; then\n  mint run carthage copy-frameworks\nelse\n  echo \"warning: Mint not installed, download from https://github.com/yonaskolb/Mint\"\nfi\n";
-		};
 		CD2B76282474523F005B31A1 /* Swiftgen */ = {
 			isa = PBXShellScriptBuildPhase;
 			buildActionMask = 2147483647;
@@ -1058,26 +1052,6 @@
 			runOnlyForDeploymentPostprocessing = 0;
 			shellPath = /bin/sh;
 			shellScript = "unset SDKROOT\nif which mint >/dev/null; then\n  #mint run swiftlint swiftlint autocorrect --format\n  mint run swiftlint\nelse\n  echo \"warning: Mint not installed, download from https://github.com/yonaskolb/Mint\"\nfi\n";
-		};
-		CD6824EA2481A81A003E59B8 /* Carthage */ = {
-			isa = PBXShellScriptBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-			);
-			inputFileListPaths = (
-			);
-			inputPaths = (
-				"$(SRCROOT)/Carthage/Build/iOS/RxTest.framework",
-				"$(SRCROOT)/Carthage/Build/iOS/RxBlocking.framework",
-			);
-			name = Carthage;
-			outputFileListPaths = (
-			);
-			outputPaths = (
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-			shellPath = /bin/sh;
-			shellScript = "if which mint >/dev/null; then\n  mint run carthage copy-frameworks\nelse\n  echo \"warning: Mint not installed, download from https://github.com/yonaskolb/Mint\"\n  if which carthage >/dev/null; then\n    /usr/local/bin/carthage copy-frameworks\n  else\n    echo \"warning: Carthage not installed, download it from https://github.com/Carthage/Carthage\"\n  fi\nfi\n";
 		};
 		E98B4F21A956C333438ED8E3 /* [CP] Check Pods Manifest.lock */ = {
 			isa = PBXShellScriptBuildPhase;
