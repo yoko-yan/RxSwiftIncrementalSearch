@@ -62,10 +62,6 @@
 		CD86867C25C0903800AD6B80 /* RxRelay.xcframework in Frameworks */ = {isa = PBXBuildFile; fileRef = CD86867B25C0903800AD6B80 /* RxRelay.xcframework */; };
 		CD86868425C0904A00AD6B80 /* RxSwiftExt.xcframework in Frameworks */ = {isa = PBXBuildFile; fileRef = CD86868325C0904A00AD6B80 /* RxSwiftExt.xcframework */; };
 		CD86869225C0905C00AD6B80 /* SVProgressHUD.xcframework in Frameworks */ = {isa = PBXBuildFile; fileRef = CD86869125C0905C00AD6B80 /* SVProgressHUD.xcframework */; };
-		CD8686F825C0944900AD6B80 /* APIKit.xcframework in Frameworks */ = {isa = PBXBuildFile; fileRef = CD86865725C08FAE00AD6B80 /* APIKit.xcframework */; };
-		CD86870925C094C200AD6B80 /* RxSwift.xcframework in Frameworks */ = {isa = PBXBuildFile; fileRef = CD86865F25C08FD800AD6B80 /* RxSwift.xcframework */; };
-		CD86876025C0972500AD6B80 /* RxTest.xcframework in Frameworks */ = {isa = PBXBuildFile; fileRef = CD86869F25C0919700AD6B80 /* RxTest.xcframework */; };
-		CD86876725C0972800AD6B80 /* RxBlocking.xcframework in Frameworks */ = {isa = PBXBuildFile; fileRef = CD8686C025C091D100AD6B80 /* RxBlocking.xcframework */; };
 		CD86876E25C0976500AD6B80 /* APIKit.xcframework in Frameworks */ = {isa = PBXBuildFile; fileRef = CD86865725C08FAE00AD6B80 /* APIKit.xcframework */; };
 		CD9638CE247328F4009BA317 /* WikipediaAPI.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = CD9638C5247328F3009BA317 /* WikipediaAPI.framework */; };
 		CD9638D5247328F4009BA317 /* WikipediaAPITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = CD9638D4247328F4009BA317 /* WikipediaAPITests.swift */; };
@@ -305,8 +301,6 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				CD86876725C0972800AD6B80 /* RxBlocking.xcframework in Frameworks */,
-				CD86876025C0972500AD6B80 /* RxTest.xcframework in Frameworks */,
 				9A7073C7B24D90CC9473E4C5 /* Pods_RxSwiftIncrementalSearchTests.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -323,8 +317,6 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				CD86870925C094C200AD6B80 /* RxSwift.xcframework in Frameworks */,
-				CD8686F825C0944900AD6B80 /* APIKit.xcframework in Frameworks */,
 				0F2BA4362782886A09BA7FBD /* Pods_WikipediaAPI.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
