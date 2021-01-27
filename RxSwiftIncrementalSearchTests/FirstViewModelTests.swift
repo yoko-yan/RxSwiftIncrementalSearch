@@ -6,7 +6,7 @@ import RxBlocking
 import APIKit
 
 @testable import RxSwiftIncrementalSearch
-//@testable import WikipediaAPI
+@testable import WikipediaAPI
 
 class FirstViewModelTests: XCTestCase {
     private var dependencies: DependenciesTest!
