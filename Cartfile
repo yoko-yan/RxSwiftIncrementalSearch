@@ -1,4 +1,2 @@
-github "ReactiveX/RxSwift"
-github "RxSwiftCommunity/RxSwiftExt"
 github "ishkawa/APIKit"
 github "SVProgressHUD/SVProgressHUD"
