@@ -28,6 +28,8 @@ final class FirstViewController: UIViewController {
         prepareNavigationItems()
         prepare()
         bind()
+
+        setAccessibility()
     }
 }
 
@@ -47,8 +49,13 @@ private extension FirstViewController {
         tableView.keyboardDismissMode = .onDrag
     }
 
-    func bind() {
+    func setAccessibility() {
+        view.accessibilityIdentifier = "first_root_view"
+        searchBar.searchTextField.accessibilityIdentifier = "search_textfield"
+        tableView.accessibilityIdentifier = "result_tableview"
+    }
 
+    func bind() {
         let input = FirstViewModel.Input(
             viewDidReachBottom: tableView.rx.reachedBottom().asObservable(),
             pullToRefreshTrigger: refreshControl.rx.controlEvent(.valueChanged).asObservable(),

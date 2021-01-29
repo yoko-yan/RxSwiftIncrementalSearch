@@ -49,6 +49,8 @@ final class ThirdViewController: UIViewController, UITextViewDelegate, Dependenc
         prepareNavigationItems()
         inatialData(wikipediaSearch)
         bind()
+
+        setAccessibility()
     }
 }
 
@@ -60,6 +62,10 @@ extension ThirdViewController {
 // MARK: - Private
 private extension ThirdViewController {
     func prepareNavigationItems() {
+    }
+
+    func setAccessibility() {
+        view.accessibilityIdentifier = "third_root_view"
     }
 
     func bind() {
