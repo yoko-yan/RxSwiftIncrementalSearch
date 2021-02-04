@@ -7,3 +7,10 @@ protocol PageObject: PageObjectAssertion {
 protocol PageObjectAssertion {
     var existsPage: Bool { get }
 }
+
+extension PageObject {
+    func wait(second: UInt32) -> Self {
+        sleep(second)
+        return self
+    }
+}

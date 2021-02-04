@@ -446,10 +446,10 @@
 			isa = PBXGroup;
 			children = (
 				CDC8A83C25C1C6FB008AC774 /* Page */,
+				CDD4162425C492A700351591 /* XCTestCase+Extension.swift */,
 				973ABFB723E4774200591A66 /* RxSwiftIncrementalSearchUITests.swift */,
 				CDC8A83425C1C6F2008AC774 /* IncrementalSearchUITests.swift */,
 				973ABFB923E4774200591A66 /* Info.plist */,
-				CDD4162425C492A700351591 /* XCTestCase+Extension.swift */,
 			);
 			path = RxSwiftIncrementalSearchUITests;
 			sourceTree = "<group>";
