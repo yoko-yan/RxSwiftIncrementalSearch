@@ -28,7 +28,6 @@ final class FirstViewController: UIViewController {
         prepareNavigationItems()
         prepare()
         bind()
-
         setAccessibility()
     }
 }
@@ -47,12 +46,6 @@ private extension FirstViewController {
         tableView.estimatedRowHeight = 5
         tableView.rowHeight = UITableView.automaticDimension
         tableView.keyboardDismissMode = .onDrag
-    }
-
-    func setAccessibility() {
-        view.accessibilityIdentifier = "first_root_view"
-        searchBar.searchTextField.accessibilityIdentifier = "search_textfield"
-        tableView.accessibilityIdentifier = "result_tableview"
     }
 
     func bind() {
@@ -172,5 +165,14 @@ extension FirstViewController: UISearchBarDelegate {
             return
         }
 
+    }
+}
+
+// MARK: - UITest
+private extension FirstViewController {
+    func setAccessibility() {
+        view.accessibilityIdentifier = "first_root_view"
+        searchBar.searchTextField.accessibilityIdentifier = "search_textfield"
+        tableView.accessibilityIdentifier = "result_tableview"
     }
 }

@@ -5,7 +5,7 @@ class FirstPageObject: PageObject {
         static let rootElement: String = "first_root_view"
         static let searchTextField: String = "search_textfield"
         static let resultTableView: String = "result_tableview"
-        static let tabBarButtonSecond: String = "tab_bar_button_second"
+        static let tabBarButtonSecond: String = "second"
     }
 
     private let app: XCUIApplication
@@ -25,7 +25,14 @@ class FirstPageObject: PageObject {
         return view.tables[IDs.resultTableView]
     }
 
-    private var secondButton: XCUIElement { return app.buttons["Second"] }
+    private var secondTabButton: XCUIElement {
+        print(XCUIApplication().debugDescription)
+        return app.tabs.buttons[IDs.tabBarButtonSecond]
+    }
+
+    var searchResultCount: Int {
+        return resultTableView.cells.count
+    }
 
     func typeTextSearchTextField(_ searchText: String) -> FirstPageObject {
         searchTextField.tap()
@@ -33,36 +40,32 @@ class FirstPageObject: PageObject {
         return self
     }
 
-//    func scrollTableViewOnePage() -> FirstPageObject {
-//        sleep(2)
-//        let lastCell = resultTableView.cells.allElementsBoundByIndex.last
-//        let maxScrolls = 3
-//        var count = 0
-//        while lastCell?.isHittable == false && count < maxScrolls {
-//            sleep(3)
-//            app.swipeUp()
-//            count += 1
-//        }
-//        lastCell?.tap()
-//        return self
-//    }
-
-    func scrollUpDownTableView() -> FirstPageObject {
-        sleep(2)
-        app.swipeUp()
-        sleep(2)
-        app.swipeDown()
-        sleep(2)
+    func pageingResultTableView() -> FirstPageObject {
+        let lastCell = resultTableView.cells.allElementsBoundByIndex.last
+        while lastCell?.isHittable == false {
+            app.swipeUp()
+            sleep(2)
+        }
         return self
     }
 
-    func selectTableViewCellFirst() -> ThirdPageObject {
-        resultTableView.cells.firstMatch.tap()
+    func scrollUpResultTableView() -> FirstPageObject {
+        app.swipeUp()
+        return self
+    }
+
+    func scrollDownResultTableView() -> FirstPageObject {
+        app.swipeDown()
+        return self
+    }
+
+    func tapCellAndNextPage(index: Int) -> ThirdPageObject {
+        resultTableView.cells.element(boundBy: index).tap()
         return ThirdPageObject(application: app)
     }
 
-    func moveToSecondPage() -> SecondPageObject {
-        secondButton.tap()
+    func goToSecondPage() -> SecondPageObject {
+        secondTabButton.tap()
         return SecondPageObject(application: app)
     }
 }

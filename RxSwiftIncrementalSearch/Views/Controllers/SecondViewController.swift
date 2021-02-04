@@ -32,6 +32,7 @@ final class SecondViewController: UIViewController {
         prepareNavigationItems()
         prepareTableView()
         bind()
+        setAccessibility()
     }
 }
 
@@ -96,5 +97,12 @@ private extension SecondViewController {
         let dependency = FifthViewController.Dependency(content: content)
         let vc = FifthViewController.make(withDependency: dependency)
         navigationController?.pushViewController(vc, animated: true)
+    }
+}
+
+// MARK: - UITest
+private extension SecondViewController {
+    func setAccessibility() {
+        view.accessibilityIdentifier = "second_root_view"
     }
 }

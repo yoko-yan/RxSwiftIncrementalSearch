@@ -9,27 +9,45 @@ class IncrementalSearchUITests: XCTestCase {
         self.app.launch()
     }
 
-    func testIncrementalSearchSuccess() {
+    func testIncrementalSearchAndPaging() {
         let searchText = "aaa"
-        XCTContext.runActivity(named: "インクリメンタルサーチ成功パターン") { _ in
+        XCTContext.runActivity(named: "goto tab2") { _ in
+            let firstPage = FirstPageObject(application: app)
+            XCTAssertTrue(firstPage.existsPage)
+            let secondPage = firstPage
+                .typeTextSearchTextField(searchText)
+                .wait(second: 2)
+                .goToSecondPage()
+                .wait(second: 2)
+            XCTAssertTrue(secondPage.existsPage)
+        }
+    }
+
+    func testIncrementalSearchAndPagingTwice() {
+        let searchText = "aaa"
+        XCTContext.runActivity(named: "paging") { _ in
+            let firstPage = FirstPageObject(application: app)
+            XCTAssertTrue(firstPage.existsPage)
+            _ = firstPage
+                .typeTextSearchTextField(searchText)
+                .wait(second: 2)
+                .pageingResultTableView()
+                .wait(second: 2)
+            XCTAssertEqual(firstPage.searchResultCount, 20)
+        }
+    }
+
+    func testIncrementalSearchAndMoveToNextPage() {
+        let searchText = "aaa"
+        XCTContext.runActivity(named: "show thirdPage") { _ in
             let firstPage = FirstPageObject(application: app)
             XCTAssertTrue(firstPage.existsPage)
             let thirdPage = firstPage
                 .typeTextSearchTextField(searchText)
-                .scrollUpDownTableView()
-                .selectTableViewCellFirst()
+                .wait(second: 2)
+                .tapCellAndNextPage(index: 0)
+                .wait(second: 2)
             XCTAssertTrue(thirdPage.existsPage)
-        }
-    }
-
-    func testLoginSuccess() {
-        let searchText = "login"
-        XCTContext.runActivity(named: "ログインテスト成功パターン") { _ in
-            SecondPageObject(application: app)
-//                .moveToLoginPage()
-//                .enterEmailAddress(email)
-//                .enterPassword(password)
-//                .tapLoginButton()
         }
     }
 }
