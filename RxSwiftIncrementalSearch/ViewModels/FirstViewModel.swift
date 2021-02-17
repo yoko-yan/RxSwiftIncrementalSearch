@@ -51,6 +51,7 @@ extension FirstViewModel: ViewModelType {
         let session = dependencies.session
 
         let requestParameterRelay = BehaviorRelay<RequestParameter>(value: RequestParameter(word: "", offset: 0))
+        let continueRelay = BehaviorRelay<WikipediaSearchResponse.Continue?>(value: nil)
 
         let incrementalSearchTrigger = input.incrementalSearchTrigger
             .debounce(.milliseconds(300), scheduler: scheduler)
@@ -65,7 +66,8 @@ extension FirstViewModel: ViewModelType {
             .share()
 
         let paginationRequestTrigger = input.viewDidReachBottom
-            .withLatestFrom(requestParameterRelay.compactMap { $0 })
+            .withLatestFrom(Observable.combineLatest(requestParameterRelay.compactMap { $0 }, continueRelay.compactMap { $0 }) )
+            .map { RequestParameter(word: $0.word, offset: $1?.sroffset ?? 0) }
             .share()
 
         let load = PublishRelay.merge(
@@ -76,7 +78,10 @@ extension FirstViewModel: ViewModelType {
             .filter { !$0.word.isEmpty }
             .throttle(.milliseconds(300), latest: false, scheduler: scheduler)
             .share()
-        let requestParameter = load
+
+        load
+            .bind(to: requestParameterRelay)
+            .disposed(by: disposeBag)
 
         let sequence = load
             .flatMapLatest { arg -> Observable<Event<WikipediaSearchResponse>> in
@@ -86,16 +91,14 @@ extension FirstViewModel: ViewModelType {
             }
             .share()
 
-        let elements = sequence.compactMap { $0.event.element }.share()
-        elements
-            .withLatestFrom(requestParameter) { ($0, $1) }
-            .compactMap { RequestParameter(word: $1.word, offset: $0.continue?.sroffset ?? 0) }
-            .bind(to: requestParameterRelay)
+        let apiResponseStream = sequence.compactMap { $0.event.element }.share()
+        apiResponseStream
+            .map { $0.continue }
+            .bind(to: continueRelay)
             .disposed(by: disposeBag)
 
-        let searchStream = elements
-            .withLatestFrom(requestParameter) { ($0, $1) }
-            .scan([]) { $1.1.offset == 0 || $1.0.continue?.sroffset == $1.0.query.search.count ? $1.0.query.search : $0 + $1.0.query.search }
+        let searchStream = apiResponseStream
+            .scan([]) { $1.continue?.sroffset == $1.query.search.count || $1.continue == nil ? $1.query.search : $0 + $1.query.search }
             .share(replay: 1)
 
         let loading = PublishRelay.merge(load.map { _ in true }, sequence.map { _ in false }).startWith(false)
