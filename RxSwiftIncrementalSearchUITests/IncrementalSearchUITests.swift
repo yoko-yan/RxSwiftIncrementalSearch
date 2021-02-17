@@ -9,21 +9,17 @@ class IncrementalSearchUITests: XCTestCase {
         self.app.launch()
     }
 
-    func testIncrementalSearchAndPaging() {
-        let searchText = "aaa"
+    func testGoToSecondPage() {
         XCTContext.runActivity(named: "goto tab2") { _ in
             let firstPage = FirstPageObject(application: app)
             XCTAssertTrue(firstPage.existsPage)
             let secondPage = firstPage
-                .typeTextSearchTextField(searchText)
-                .wait(second: 2)
                 .goToSecondPage()
-                .wait(second: 2)
             XCTAssertTrue(secondPage.existsPage)
         }
     }
 
-    func testIncrementalSearchAndPagingTwice() {
+    func testIncrementalSearchAndPaging() {
         let searchText = "aaa"
         XCTContext.runActivity(named: "paging") { _ in
             let firstPage = FirstPageObject(application: app)

@@ -31,10 +31,6 @@ private extension FirstViewModel {
         let word: String
         let offset: Int
     }
-
-    static func createRequestParameter(word: String = "", offset: Int = 0) -> RequestParameter {
-        return RequestParameter(word: word, offset: offset)
-    }
 }
 
 extension FirstViewModel: ViewModelType {
@@ -54,18 +50,18 @@ extension FirstViewModel: ViewModelType {
     func transform(input: Input) -> Output {
         let session = dependencies.session
 
-        let requestParameterRelay = BehaviorRelay<RequestParameter>(value: FirstViewModel.createRequestParameter())
+        let requestParameterRelay = BehaviorRelay<RequestParameter>(value: RequestParameter(word: "", offset: 0))
 
         let incrementalSearchTrigger = input.incrementalSearchTrigger
             .debounce(.milliseconds(300), scheduler: scheduler)
             .filter { $0.count >= 3 }
             .distinctUntilChanged()
-            .map { FirstViewModel.createRequestParameter(word: $0) }
+            .map { RequestParameter(word: $0, offset: 0) }
             .share()
 
         let reloadRequestTrigger = input.pullToRefreshTrigger
             .withLatestFrom(requestParameterRelay.compactMap { $0 })
-            .map { FirstViewModel.createRequestParameter(word: $0.word) }
+            .map { RequestParameter(word: $0.word, offset: 0) }
             .share()
 
         let paginationRequestTrigger = input.viewDidReachBottom
@@ -93,7 +89,7 @@ extension FirstViewModel: ViewModelType {
         let elements = sequence.compactMap { $0.event.element }.share()
         elements
             .withLatestFrom(requestParameter) { ($0, $1) }
-            .compactMap { FirstViewModel.createRequestParameter(word: $1.word, offset: $0.continue?.sroffset ?? 0) }
+            .compactMap { RequestParameter(word: $1.word, offset: $0.continue?.sroffset ?? 0) }
             .bind(to: requestParameterRelay)
             .disposed(by: disposeBag)
 

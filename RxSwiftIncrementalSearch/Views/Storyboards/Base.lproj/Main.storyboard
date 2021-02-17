@@ -129,11 +129,11 @@
             </objects>
             <point key="canvasLocation" x="1616" y="396"/>
         </scene>
-        <!--Second-->
+        <!--second-->
         <scene sceneID="T64-n3-vwx">
             <objects>
                 <navigationController id="DNa-DS-aol" sceneMemberID="viewController">
-                    <tabBarItem key="tabBarItem" title="Second" image="second" id="J8h-CL-yXN" userLabel="second"/>
+                    <tabBarItem key="tabBarItem" title="second" image="second" id="J8h-CL-yXN" userLabel="second"/>
                     <navigationBar key="navigationBar" contentMode="scaleToFill" insetsLayoutMarginsFromSafeArea="NO" id="64f-gg-16e">
                         <rect key="frame" x="0.0" y="44" width="414" height="44"/>
                         <autoresizingMask key="autoresizingMask"/>
