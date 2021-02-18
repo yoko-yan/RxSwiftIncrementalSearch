@@ -3,7 +3,8 @@
 # setup Gems, Brews and Mints
 echo "Install Gems and Brew, Mint"
 gem install bundler
-bundle install --path vendor/bundle
+bundle config set path 'vendor/bundle'
+bundle install
 brew update
 brew install mint
 make mint-bootstrap
