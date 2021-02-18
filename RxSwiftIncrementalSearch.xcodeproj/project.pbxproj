@@ -26,7 +26,7 @@
 		973ABFA223E4774100591A66 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 973ABFA023E4774100591A66 /* LaunchScreen.storyboard */; };
 		973ABFAD23E4774100591A66 /* RxSwiftIncrementalSearchTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 973ABFAC23E4774100591A66 /* RxSwiftIncrementalSearchTests.swift */; };
 		973ABFB823E4774200591A66 /* RxSwiftIncrementalSearchUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 973ABFB723E4774200591A66 /* RxSwiftIncrementalSearchUITests.swift */; };
-		9743A6CA23F8799200A335EC /* (null) in Embed Frameworks */ = {isa = PBXBuildFile; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
+		9743A6CA23F8799200A335EC /* BuildFile in Embed Frameworks */ = {isa = PBXBuildFile; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
 		B279199FDF4156E8AE54738C /* Pods_RxSwiftIncrementalSearch.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 8F6E2F50E002A463777F0E41 /* Pods_RxSwiftIncrementalSearch.framework */; };
 		CD244D86248967DC00A1D67C /* search3.json in Resources */ = {isa = PBXBuildFile; fileRef = CD244D85248967DC00A1D67C /* search3.json */; };
 		CD244D8A248A931900A1D67C /* FourthViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = CD244D89248A931900A1D67C /* FourthViewController.swift */; };
@@ -164,7 +164,7 @@
 			files = (
 				CD9638DB247328F4009BA317 /* WikipediaAPI.framework in Embed Frameworks */,
 				CD963906247334A8009BA317 /* Library.framework in Embed Frameworks */,
-				9743A6CA23F8799200A335EC /* (null) in Embed Frameworks */,
+				9743A6CA23F8799200A335EC /* BuildFile in Embed Frameworks */,
 			);
 			name = "Embed Frameworks";
 			runOnlyForDeploymentPostprocessing = 0;
@@ -984,22 +984,11 @@
 			files = (
 			);
 			inputFileListPaths = (
-			);
-			inputPaths = (
-				"${PODS_ROOT}/Target Support Files/Pods-RxSwiftIncrementalSearch/Pods-RxSwiftIncrementalSearch-frameworks.sh",
-				"${BUILT_PRODUCTS_DIR}/RxCocoa/RxCocoa.framework",
-				"${BUILT_PRODUCTS_DIR}/RxRelay/RxRelay.framework",
-				"${BUILT_PRODUCTS_DIR}/RxSwift/RxSwift.framework",
-				"${BUILT_PRODUCTS_DIR}/RxSwiftExt/RxSwiftExt.framework",
+				"${PODS_ROOT}/Target Support Files/Pods-RxSwiftIncrementalSearch/Pods-RxSwiftIncrementalSearch-frameworks-${CONFIGURATION}-input-files.xcfilelist",
 			);
 			name = "[CP] Embed Pods Frameworks";
 			outputFileListPaths = (
-			);
-			outputPaths = (
-				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/RxCocoa.framework",
-				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/RxRelay.framework",
-				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/RxSwift.framework",
-				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/RxSwiftExt.framework",
+				"${PODS_ROOT}/Target Support Files/Pods-RxSwiftIncrementalSearch/Pods-RxSwiftIncrementalSearch-frameworks-${CONFIGURATION}-output-files.xcfilelist",
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 			shellPath = /bin/sh;
@@ -1012,22 +1001,11 @@
 			files = (
 			);
 			inputFileListPaths = (
-			);
-			inputPaths = (
-				"${PODS_ROOT}/Target Support Files/Pods-RxSwiftIncrementalSearchUITests/Pods-RxSwiftIncrementalSearchUITests-frameworks.sh",
-				"${BUILT_PRODUCTS_DIR}/RxCocoa/RxCocoa.framework",
-				"${BUILT_PRODUCTS_DIR}/RxRelay/RxRelay.framework",
-				"${BUILT_PRODUCTS_DIR}/RxSwift/RxSwift.framework",
-				"${BUILT_PRODUCTS_DIR}/RxSwiftExt/RxSwiftExt.framework",
+				"${PODS_ROOT}/Target Support Files/Pods-RxSwiftIncrementalSearchUITests/Pods-RxSwiftIncrementalSearchUITests-frameworks-${CONFIGURATION}-input-files.xcfilelist",
 			);
 			name = "[CP] Embed Pods Frameworks";
 			outputFileListPaths = (
-			);
-			outputPaths = (
-				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/RxCocoa.framework",
-				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/RxRelay.framework",
-				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/RxSwift.framework",
-				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/RxSwiftExt.framework",
+				"${PODS_ROOT}/Target Support Files/Pods-RxSwiftIncrementalSearchUITests/Pods-RxSwiftIncrementalSearchUITests-frameworks-${CONFIGURATION}-output-files.xcfilelist",
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 			shellPath = /bin/sh;
@@ -1106,20 +1084,11 @@
 			files = (
 			);
 			inputFileListPaths = (
-			);
-			inputPaths = (
-				"${PODS_ROOT}/Target Support Files/Pods-RxSwiftIncrementalSearchTests/Pods-RxSwiftIncrementalSearchTests-frameworks.sh",
-				"${BUILT_PRODUCTS_DIR}/RxSwift/RxSwift.framework",
-				"${BUILT_PRODUCTS_DIR}/RxBlocking/RxBlocking.framework",
-				"${BUILT_PRODUCTS_DIR}/RxTest/RxTest.framework",
+				"${PODS_ROOT}/Target Support Files/Pods-RxSwiftIncrementalSearchTests/Pods-RxSwiftIncrementalSearchTests-frameworks-${CONFIGURATION}-input-files.xcfilelist",
 			);
 			name = "[CP] Embed Pods Frameworks";
 			outputFileListPaths = (
-			);
-			outputPaths = (
-				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/RxSwift.framework",
-				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/RxBlocking.framework",
-				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/RxTest.framework",
+				"${PODS_ROOT}/Target Support Files/Pods-RxSwiftIncrementalSearchTests/Pods-RxSwiftIncrementalSearchTests-frameworks-${CONFIGURATION}-output-files.xcfilelist",
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 			shellPath = /bin/sh;
@@ -1132,18 +1101,11 @@
 			files = (
 			);
 			inputFileListPaths = (
-			);
-			inputPaths = (
-				"${PODS_ROOT}/Target Support Files/Pods-WikipediaAPITests/Pods-WikipediaAPITests-frameworks.sh",
-				"${BUILT_PRODUCTS_DIR}/RxSwift/RxSwift.framework",
-				"${BUILT_PRODUCTS_DIR}/RxBlocking/RxBlocking.framework",
+				"${PODS_ROOT}/Target Support Files/Pods-WikipediaAPITests/Pods-WikipediaAPITests-frameworks-${CONFIGURATION}-input-files.xcfilelist",
 			);
 			name = "[CP] Embed Pods Frameworks";
 			outputFileListPaths = (
-			);
-			outputPaths = (
-				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/RxSwift.framework",
-				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/RxBlocking.framework",
+				"${PODS_ROOT}/Target Support Files/Pods-WikipediaAPITests/Pods-WikipediaAPITests-frameworks-${CONFIGURATION}-output-files.xcfilelist",
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 			shellPath = /bin/sh;
