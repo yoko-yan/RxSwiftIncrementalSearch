@@ -5,8 +5,12 @@ echo "Install Gems and Brew, Mint"
 gem install bundler
 bundle config set path 'vendor/bundle'
 bundle install
+
+git -C /usr/local/Homebrew/Library/Taps/homebrew/homebrew-core fetch --unshallow
+git -C /usr/local/Homebrew/Library/Taps/homebrew/homebrew-cask fetch --unshallow
 brew update
 brew install mint
+
 make mint-bootstrap
 
 # install CocoaPods
