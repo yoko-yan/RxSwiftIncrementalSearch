@@ -7,7 +7,7 @@ opt_in_rules:
 excluded:
 - Pods/
 - Carthage/
-
+- DangerTools
 
 line_length: 300
 
