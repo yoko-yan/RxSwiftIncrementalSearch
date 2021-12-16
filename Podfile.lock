@@ -1,22 +1,22 @@
 PODS:
-  - RxBlocking (6.0.0):
-    - RxSwift (= 6.0.0)
-  - RxCocoa (6.0.0):
-    - RxRelay (= 6.0.0)
-    - RxSwift (= 6.0.0)
-  - RxRelay (6.0.0):
-    - RxSwift (= 6.0.0)
-  - RxSwift (6.0.0)
-  - RxSwiftExt (6.0.0):
-    - RxSwiftExt/Core (= 6.0.0)
-    - RxSwiftExt/RxCocoa (= 6.0.0)
-  - RxSwiftExt/Core (6.0.0):
-    - RxSwift (= 6.0.0)
-  - RxSwiftExt/RxCocoa (6.0.0):
-    - RxCocoa (= 6.0.0)
+  - RxBlocking (6.2.0):
+    - RxSwift (= 6.2.0)
+  - RxCocoa (6.2.0):
+    - RxRelay (= 6.2.0)
+    - RxSwift (= 6.2.0)
+  - RxRelay (6.2.0):
+    - RxSwift (= 6.2.0)
+  - RxSwift (6.2.0)
+  - RxSwiftExt (6.0.1):
+    - RxSwiftExt/Core (= 6.0.1)
+    - RxSwiftExt/RxCocoa (= 6.0.1)
+  - RxSwiftExt/Core (6.0.1):
+    - RxSwift (~> 6.0)
+  - RxSwiftExt/RxCocoa (6.0.1):
+    - RxCocoa (~> 6.0)
     - RxSwiftExt/Core
-  - RxTest (6.0.0):
-    - RxSwift (= 6.0.0)
+  - RxTest (6.2.0):
+    - RxSwift (= 6.2.0)
 
 DEPENDENCIES:
   - RxBlocking
@@ -35,13 +35,13 @@ SPEC REPOS:
     - RxTest
 
 SPEC CHECKSUMS:
-  RxBlocking: c025b8c6fe08c5b18c039b5b11d41ec413f8a59e
-  RxCocoa: 3f79328fafa3645b34600f37c31e64c73ae3a80e
-  RxRelay: 8d593be109c06ea850df027351beba614b012ffb
-  RxSwift: c14e798c59b9f6e9a2df8fd235602e85cc044295
-  RxSwiftExt: 6637802b67dd4b60c00c661cc640316b693c0387
-  RxTest: ddef4052e63cb116f5b73510488c3113c37c62e5
+  RxBlocking: 0b29f7d2079109a8de49c411381bed7c33ef1eeb
+  RxCocoa: 4baf94bb35f2c0ab31bc0cb9f1900155f646ba42
+  RxRelay: e72dbfd157807478401ef1982e1c61c945c94b2f
+  RxSwift: d356ab7bee873611322f134c5f9ef379fa183d8f
+  RxSwiftExt: d61c4b9b06e0a448041b1c659e0f1b5c5a035afc
+  RxTest: 0c692fa672b694373ba86d2b00033595297a2831
 
 PODFILE CHECKSUM: 6b4898b5ed3ecca2d4556569f2a3fa9c6d35685b
 
-COCOAPODS: 1.10.1
+COCOAPODS: 1.11.2

@@ -1,3 +1,6 @@
+bootstrap:
+	./scripts/bootstrap.sh
+
 mint-bootstrap:
 	MINT_PATH=./mint/lib MINT_LINK_PATH=./mint/bin mint bootstrap
 

@@ -1,5 +1,8 @@
 #!/bin/sh -x
 
+echo "Setup Ruby"
+rbenv local
+
 # setup Gems, Brews and Mints
 echo "Install Gems and Brew, Mint"
 gem install bundler
