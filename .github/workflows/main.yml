@@ -1,36 +1,78 @@
-# This is a basic workflow to help you get started with Actions
+name: Danger Swift
 
-name: CI
-
-# Controls when the workflow will run
 on:
-  # Triggers the workflow on push or pull request events but only for the master branch
-  push:
-    branches: [ master ]
   pull_request:
-    branches: [ master ]
+    branches:
+      - main
 
-  # Allows you to run this workflow manually from the Actions tab
-  workflow_dispatch:
+permissions:
+  contents: read
+  pull-requests: write
+  issues: write
+  statuses: write
 
-# A workflow run is made up of one or more jobs that can run sequentially or in parallel
 jobs:
-  # This workflow contains a single job called "build"
-  build:
-    # The type of runner that the job will run on
+  danger:
+
     runs-on: ubuntu-latest
+    timeout-minutes: 45
 
-    # Steps represent a sequence of tasks that will be executed as part of the job
     steps:
-      # Checks-out your repository under $GITHUB_WORKSPACE, so your job can access it
       - uses: actions/checkout@v2
+        with:
+          fetch-depth: 0
 
-      # Runs a single command using the runners shell
-      - name: Run a one-line script
-        run: echo Hello, world!
+      - uses: fwal/setup-swift@v1
+        with:
+          swift-version: "5.5.1"
 
-      # Runs a set of commands using the runners shell
-      - name: Run a multi-line script
+      - name: Get Swift Version
+        run: swift --version
+
+      - name: Setup Ruby
+        uses: actions/setup-ruby@v1
+        with:
+          ruby-version: '2.7'
+
+      - name: Cache DangerTools
+        uses: actions/cache@v2
+        env:
+          cache-name: danger-tools
+        with:
+          path: DangerTools
+          key: v1-${{ runner.os }}-${{ env.cache-name }}-${{ hashFiles('DangerTools/Package.resolved') }}
+          restore-keys: |
+            v1-${{ runner.os }}-${{ env.cache-name }}-
+
+      - name: Build DangerTools
         run: |
-          echo Add other actions to build,
-          echo test, and deploy your project.
+          ./DangerTools/.build/release/swiftlint --version || swift run -c release --package-path DangerTools --build-path DangerTools/.build swiftlint --version
+          sudo cp ./DangerTools/.build/release/swiftlint /usr/bin
+
+      - name: Cache Gems
+        uses: actions/cache@v2
+        env:
+          cache-name: gems
+        with:
+          path: vendor/bundle
+          key: v1-${{ runner.os }}-${{ env.cache-name }}-${{ hashFiles('Gemfile.lock') }}
+          restore-keys: |
+            v1-${{ runner.os }}-${{ env.cache-name }}-
+
+      - name: Install Gems
+        env:
+          BUNDLE_JOBS: 4
+          BUNDLE_RETRY: 3
+        run: |
+          bundle config set path 'vendor/bundle' ; bundle config set clean 'true'
+          bundle check || bundle install
+
+      - name: Get SwiftLint Version
+        run: |
+          swiftlint version
+
+      - name: Run Danger
+        env:
+          GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
+        run: |
+          bundle exec danger
