@@ -11,6 +11,7 @@ class AppDelegate: UIResponder, UIApplicationDelegate {
         window?.rootViewController = RootViewController()
         window?.makeKeyAndVisible()
         
+        
         UINavigationBar.applyNavigationColor()
         return true
     }
