@@ -3,20 +3,16 @@
 RxSwiftでインクリメンタルサーチ＆ページネーションのサンプル
 
 ## 実行した環境
-- Xcode 12.4
-- Swift 5.3.2
-- macOS Catalina 10.15.7
+- Xcode 13.1
+- Swift 5.5.1
+- macOS Catalina 11.6
 
 ## 主に使用しているライブラリ
-- CocoaPod 
-- Carthage 0.37.0
-- APIKit
-- RxSwift 6.0.0
-- RxCocoa
-- RxSwiftExt
-- RxTest
-- RxBloking
-- Mint
+- CocoaPod 1.11.2
+- Carthage 0.38.0
+- Mint 0.17.1
+- APIKit 5.2.0
+- RxSwift 6.2.0
 
 ## キャプチャ
 
