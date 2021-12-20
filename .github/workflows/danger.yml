@@ -25,6 +25,12 @@ jobs:
       - name: Setup Swift
         uses: fwal/setup-swift@v1
 
+      - name: Get Swift Version
+        id: get-swift-version
+        run: |
+          echo "::set-output name=swift-version::$(swift --version | head -1 | sed 's/^.*Swift version \([0-9]\.[0-9]\.[0-9]\) (.*)$/\1/')"
+        shell: bash
+
       - name: Setup Ruby
         uses: ruby/setup-ruby@v1
 
@@ -52,9 +58,9 @@ jobs:
           cache-name: danger-tools
         with:
           path: DangerTools
-          key: v1-${{ runner.os }}-${{ env.cache-name }}-${{ hashFiles('DangerTools/Package.resolved') }}
+          key: v1-${{ runner.os }}-${{ env.cache-name }}-${{ steps.get-swift-version.outputs.swift-version }}-${{ hashFiles('DangerTools/Package.resolved') }}
           restore-keys: |
-            v1-${{ runner.os }}-${{ env.cache-name }}-
+            v1-${{ runner.os }}-${{ env.cache-name }}-${{ steps.get-swift-version.outputs.swift-version }}-
 
       - name: Build DangerTools
         run: |
